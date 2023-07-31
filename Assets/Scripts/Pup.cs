@@ -6,7 +6,7 @@ public class Pup : MonoBehaviour
 {
     [SerializeField]
 
-    private float velocidade = 3.5f ;
+    private float _velocidade = 3.5f ;
 
     void Start()
     {
@@ -16,7 +16,7 @@ public class Pup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.down * velocidade * Time.deltaTime);
+        transform.Translate(Vector3.down * _velocidade * Time.deltaTime);
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
